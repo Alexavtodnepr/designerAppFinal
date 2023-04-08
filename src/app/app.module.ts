@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { LeftSideComponent } from './layouts/left-side/left-side.component';
 import { RigthSideComponent } from './layouts/rigth-side/rigth-side.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RigthSideComponent } from './layouts/rigth-side/rigth-side.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

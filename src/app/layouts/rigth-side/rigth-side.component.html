@@ -1,21 +1,31 @@
-<div class="w-full h-screen">
-  <div class="ml-10 pr-10 flex flex-col overflow-hidden">
-    <div class="flex flex-row justify-between w-61.5 mt-8.75 items-center mb-7.5">
-      <a href="tel:+380509194529"><img src="assets/icons/call.svg" alt="tel"></a>
-      <a href="mailto:katherine.dereeva@gmail.com"><img src="assets/icons/email.svg" alt="email"></a>
-      <a href="https://www.instagram.com/cat_pyskun/" target="_blank"><img src="assets/icons/Instagram.svg" alt="insta"></a>
+<div class="w-full h-full">
+  <div class="flex flex-row pr-10">
+    <div *ngIf="showResume" class="w-[400px] h-154 my-auto"
+         [ngClass]="{'mx-10': showResume}"
+         [@fadeInOut]="showResume ? 'fadeIn' : 'fadeOut'"
+         >
+      <img class="object-contain" src="assets/img/CVPyskunKateryna.svg" alt="cv Kateryna Pyskun">
     </div>
-    <div class="flex flex-row justify-start w-75 mb-8.5">
-      Professional designer. Experience in advertising and printing. Presentations. Animation
-      Web design and UI/UX. Illustration. Creatives
-      This is a small part of my work.
-      My photo and video works can be viewed at the link on Instagram.
+    <div class="flex flex-col">
+      <div class="flex flex-col overflow-hidden ml-10">
+        <div class="flex flex-row justify-between w-61.5 mt-8.75 items-center mb-7.5">
+          <a href="tel:+380509194529"><img src="assets/icons/call.svg" alt="tel"></a>
+          <a href="mailto:katherine.dereeva@gmail.com"><img src="assets/icons/email.svg" alt="email"></a>
+          <a href="https://www.instagram.com/cat_pyskun/" target="_blank"><img src="assets/icons/Instagram.svg" alt="insta"></a>
+        </div>
+        <div class="flex flex-row justify-start w-75 mb-8.5">
+          Professional designer. Experience in advertising and printing. Presentations. Animation
+          Web design and UI/UX. Illustration. Creatives
+          This is a small part of my work.
+          My photo and video works can be viewed at the link on Instagram.
+        </div>
+        <div (click)="showResume = !showResume" class="flex flex-row justify-center w-75 uppercase bg-[#D3B4A2] h-15 cursor-pointer items-center rounded-xl active:bg-[#955F31]">
+          resume
+        </div>
+      </div>
+      <div class="flex w-[400px] h-[400px] overflow-hidden">
+        <img class="object-contain w-[400px] h-[400px]" src="assets/img/logo.png" alt="">
+      </div>
     </div>
-    <div class="flex flex-row justify-center w-75 uppercase bg-[#D3B4A2] h-15 cursor-pointer items-center rounded-xl active:bg-[#955F31]">
-      resume
-    </div>
-  </div>
-  <div class="flex w-[400px] h-[400px] overflow-hidden">
-    <img class="object-contain w-[400px] h-[400px]" src="assets/img/logo.png" alt="">
   </div>
 </div>
