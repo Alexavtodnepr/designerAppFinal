@@ -1,0 +1,6 @@
+.left-block{
+  box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.55);
+}
+.gradientAll{
+  background: linear-gradient(180deg, #204D48 51.76%, #233237 100%);
+}
