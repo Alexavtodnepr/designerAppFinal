@@ -4,3 +4,16 @@
 .gradientAll{
   background: linear-gradient(180deg, #204D48 51.76%, #233237 100%);
 }
+@media print {
+  .wrap{
+    display: none;
+  }
+  #resume {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 30px;
+    background-color: #f4f5ef;
+  }
+}

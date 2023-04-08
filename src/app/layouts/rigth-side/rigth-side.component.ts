@@ -24,4 +24,7 @@ export class RigthSideComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public print() {
+    window.print();
+  }
 }
