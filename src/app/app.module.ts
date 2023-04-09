@@ -7,13 +7,15 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { LeftSideComponent } from './layouts/left-side/left-side.component';
 import { RigthSideComponent } from './layouts/rigth-side/rigth-side.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CompletedWorksComponent } from './components/completed-works/completed-works.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     LeftSideComponent,
-    RigthSideComponent
+    RigthSideComponent,
+    CompletedWorksComponent
   ],
   imports: [
     BrowserModule,

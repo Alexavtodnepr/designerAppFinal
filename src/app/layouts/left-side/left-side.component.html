@@ -1,8 +1,12 @@
-<div class="h-full w-full gradient">
-  <div class="gradient flex w-full h-full flex-col items-end mr-10">
-    <div class="flex w-fit mt-8.75 border-2 border-black px-10 uppercase text-[#D3B4A2] text-[32px]">WEB UX/UI</div>
-    <div class="flex w-full h-full border-2 border-black flex-row justify-center items-center">
-      dczravfdlkfdl
+<div class="h-full w-full gradient pt-24">
+  <div class="flex w-full h-30 flex-col items-end -mt-16" *ngFor="let card of cardsArray"
+       [ngClass]="{'h-fit': card.active}">
+    <div class="z-40 box-shadow flex bg-[#8c582d] w-fit px-10 rounded-t-lg uppercase text-[#D3B4A2] text-[32px] cursor-pointer"
+        [ngClass]="{'bg-[#955F31]': card.active}"
+    (click)="activeCard(card)">{{card.title}}</div>
+    <div class="z-10 py-10 bg-[#8c582d] overflow-hidden gradient box-shadow flex w-full h-full flex-row justify-center items-center"
+        [ngClass]="{'gradient': card.active}">
+          <app-completed-works [pictureArray]="card.picture"></app-completed-works>
     </div>
   </div>
 </div>
