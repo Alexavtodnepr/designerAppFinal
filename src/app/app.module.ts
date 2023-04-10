@@ -8,6 +8,7 @@ import { LeftSideComponent } from './layouts/left-side/left-side.component';
 import { RigthSideComponent } from './layouts/rigth-side/rigth-side.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CompletedWorksComponent } from './components/completed-works/completed-works.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CompletedWorksComponent } from './components/completed-works/completed-
     MainPageComponent,
     LeftSideComponent,
     RigthSideComponent,
-    CompletedWorksComponent
+    CompletedWorksComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,

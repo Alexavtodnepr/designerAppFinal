@@ -1,10 +1,17 @@
-<div class="flex flex-row flex-wrap mt-10">
+<div class="flex flex-row flex-wrap mt-10 justify-center">
+  <ng-container *ngIf="pictureArray[0].type === 'web-figma'">
+    <div *ngFor="let pic of pictureArray">
+      <ng-container *ngIf="pic.type === 'web-figma'">
+        <a class="w-fit" href="{{pic.link}}"><img class="w-full" src="{{pic.imgUrl}}" alt="{{pic.alt}}"></a>
+      </ng-container>
+    </div>
+  </ng-container>
   <div *ngFor="let pic of pictureArray">
-    <ng-container *ngIf="pic.link">
-      <a href="{{pic.link}}"><img src="{{pic.imgUrl}}" alt="{{pic.alt}}"></a>
-    </ng-container>
-    <ng-container *ngIf="!pic.link">
+    <ng-container *ngIf="pic.type === 'picture'">
       <img src="{{pic.imgUrl}}" alt="{{pic.alt}}">
     </ng-container>
   </div>
+  <ng-container *ngIf="pictureArray[0].type === 'carousel'">
+    <app-carousel [imges]="pictureArray"></app-carousel>
+  </ng-container>
 </div>
