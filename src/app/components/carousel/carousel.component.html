@@ -1,7 +1,9 @@
-<div class="px-5 overflow-hidden">
-  <div class="flex w-full overflow-hidden">
+<div class="w-full relative">
+  <div class="flex w-full transition duration-500" #image [style.transform]="'translateX(' + move + 'px)'">
     <div class="w-fit flex h-[240px] shrink-0" *ngFor="let img of imges">
-      <img class="w-fit object-cover h-[240px]" src="{{img.imgUrl}}" alt="{{img.alt}}">
+      <img class="w-full object-cover h-[240px]" src="{{img.imgUrl}}" alt="{{img.alt}}">
     </div>
   </div>
+    <div *ngIf="sizeArray.length !== 0 && index !==sizeArray.length-1" class="absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer transition-opacity duration-200 ease-in-out active:opacity-60" (click)="next()"><img src="assets/icons/arrow-right.svg" alt="right"></div>
+    <div *ngIf="index>0" class="absolute rotate-180 left-0 top-1/2 transform -translate-y-1/2 cursor-pointer transition-opacity duration-200 ease-in-out active:opacity-60" (click)="prev()"><img src="assets/icons/arrow-right.svg" alt="right"></div>
 </div>

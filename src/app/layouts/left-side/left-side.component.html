@@ -1,10 +1,10 @@
-<div class="h-full w-full gradient pt-24">
-  <div class="flex w-full flex-col items-end -mt-16 group last:h-fit transition-[height] duration-1000" *ngFor="let card of cardsArray"
+<div class="h-full w-full md:gradient pt-24">
+  <div class="flex w-full flex-col items-end -mt-16 group h-fit last:h-fit transition-[height] duration-1000" *ngFor="let card of cardsArray"
        [ngStyle]="{'height': card.active? card.height: '115px'}">
-    <div class="z-40 box-shadow flex bg-[#8c582d] w-fit px-10 rounded-t-lg uppercase text-[#D3B4A2] text-[32px] cursor-pointer group-last:cursor-default"
+    <div class="z-40 box-shadow flex bg-[#8c582d] w-fit px-10 rounded-t-lg uppercase text-[#D3B4A2] text-[16px] md:text-[32px] cursor-pointer group-last:cursor-default"
         [ngClass]="{'bg-[#955F31]': card.active}"
     (click)="activeCard(card)">{{card.title}}</div>
-    <div class="z-10 py-10 bg-[#8c582d] overflow-hidden gradient box-shadow flex w-full h-full flex-row justify-center items-center"
+    <div class="z-10 py-10 bg-[#8c582d] px-5 overflow-hidden gradient box-shadow flex w-full h-full flex-row justify-center items-center"
         [ngClass]="{'gradient': card.active}">
           <app-completed-works [pictureArray]="card.picture"></app-completed-works>
     </div>

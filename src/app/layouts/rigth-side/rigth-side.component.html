@@ -1,7 +1,7 @@
 <div class="flex w-full h-full">
-  <div class="flex h-full flex-col-reverse items-center md:flex-row pr-10">
-    <div *ngIf="showResume" class="w-[400px] h-full pt-24 cursor-pointer"
-         [ngClass]="{'ml-10': showResume}"
+  <div class="flex h-full flex-col-reverse items-center md:flex-row md:pr-10">
+    <div *ngIf="showResume" class="w-full md:w-[400px] h-full pt-24 cursor-pointer"
+         [ngClass]="{'ml-0 md:ml-10': showResume}"
          [@fadeInOut]="showResume ? 'fadeIn' : 'fadeOut'"
          >
       <img class="object-contain" src="assets/img/CVPyskunKateryna.svg" alt="cv Kateryna Pyskun" (click)="print()">
