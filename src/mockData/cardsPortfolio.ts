@@ -17,36 +17,36 @@ export const cardsPortfolioArray = [
     active: false
   },
   {id: 2, height: '650px', type: 'picture', title: 'LOGO', picture: [
-      { type: 'picture', imgUrl: 'assets/logo/1.svg', alt: 'logo'},
-      { type: 'picture', imgUrl: 'assets/logo/2.svg', alt: 'logo1'}
+      { type: 'picture', imgUrl: 'assets/logo/1.png', alt: 'logo'},
+      { type: 'picture', imgUrl: 'assets/logo/2.png', alt: 'logo1'}
     ], active: false},
   {id: 3, height: '950px', type: 'picture', title: 'POLYGRAPHY', picture: [
-      { type: 'picture', imgUrl: 'assets/poligrafy/1.svg', alt: 'poligrafy'}
+      { type: 'picture', imgUrl: 'assets/poligrafy/1.png', alt: 'poligrafy'}
     ], active: false},
   {id: 4, height: '850px', type: 'picture', title: 'Visual for social networks', picture: [
-      { type: 'picture', imgUrl: 'assets/visual/1.svg', alt: 'visual'},
+      { type: 'picture', imgUrl: 'assets/visual/1.png', alt: 'visual'},
     ], active: false},
   {id: 5, height: '650px', type: 'picture', title: 'outdoor decoration', picture: [
-      { type: 'picture', imgUrl: 'assets/outdur/1.svg', alt: 'outdur'},
-      { type: 'picture', imgUrl: 'assets/outdur/2.svg', alt: 'outdur1'}
+      { type: 'picture', imgUrl: 'assets/outdur/1.png', alt: 'outdur'},
+      { type: 'picture', imgUrl: 'assets/outdur/2.png', alt: 'outdur1'}
     ], active: false},
   {id: 6, height: '1050px', type: 'picture', title: 'souvenirs prints and other', picture: [
-      { type: 'picture', imgUrl: 'assets/souvernirs/1.svg', alt: 'souvenirs'},
+      { type: 'picture', imgUrl: 'assets/souvernirs/1.png', alt: 'souvenirs'},
     ], active: false},
   {id: 7, height: '950px', type: 'picture', title: 'board games, stands, Packaging', picture: [
-      { type: 'picture', imgUrl: 'assets/boardgames/1.svg', alt: 'boardgames'},
+      { type: 'picture', imgUrl: 'assets/boardgames/1.png', alt: 'boardgames'},
     ], active: false},
   {id: 8, height: 'fit-content', type: 'picture', title: 'MY ART',
     picture: [
-      {type: 'carousel', imgUrl: 'assets/myArt/1.svg', alt: ''},
-      {type: 'carousel', imgUrl: 'assets/myArt/2.svg', alt: ''},
-      {type: 'carousel', imgUrl: 'assets/myArt/3.svg', alt: ''},
-      {type: 'carousel', imgUrl: 'assets/myArt/4.svg', alt: ''},
-      {type: 'carousel', imgUrl: 'assets/myArt/5.svg', alt: ''},
-      {type: 'carousel', imgUrl: 'assets/myArt/6.svg', alt: ''},
-      {type: 'carousel', imgUrl: 'assets/myArt/7.svg', alt: ''},
-      {type: 'carousel', imgUrl: 'assets/myArt/8.svg', alt: ''},
-      {type: 'carousel', imgUrl: 'assets/myArt/9.svg', alt: ''},
+      {type: 'carousel', imgUrl: 'assets/myArt/1.png', alt: ''},
+      {type: 'carousel', imgUrl: 'assets/myArt/2.png', alt: ''},
+      {type: 'carousel', imgUrl: 'assets/myArt/3.png', alt: ''},
+      {type: 'carousel', imgUrl: 'assets/myArt/4.png', alt: ''},
+      {type: 'carousel', imgUrl: 'assets/myArt/5.png', alt: ''},
+      {type: 'carousel', imgUrl: 'assets/myArt/6.png', alt: ''},
+      {type: 'carousel', imgUrl: 'assets/myArt/7.png', alt: ''},
+      {type: 'carousel', imgUrl: 'assets/myArt/8.png', alt: ''},
+      {type: 'carousel', imgUrl: 'assets/myArt/9.png', alt: ''},
     ],
     active: true},
 ]
