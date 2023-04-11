@@ -29,6 +29,7 @@ export class CarouselComponent implements OnInit, AfterViewChecked {
       // @ts-ignore
           this.sizeArray = widthAllImg;
         }
+        // this.interval()
       },2000);
     }
 
@@ -54,6 +55,11 @@ export class CarouselComponent implements OnInit, AfterViewChecked {
     if(this.sizeArray.length !== 0){
       this.move += -Math.floor(this.sizeArray[this.index-1]);
     }
-
   }
+
+  // interval(){
+  //   setInterval(()=>{
+  //     this.next();
+  //   },1000)
+  // }
 }

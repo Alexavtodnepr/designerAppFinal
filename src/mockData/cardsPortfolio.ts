@@ -36,17 +36,17 @@ export const cardsPortfolioArray = [
   {id: 7, height: '950px', type: 'picture', title: 'board games, stands, Packaging', picture: [
       { type: 'picture', imgUrl: 'assets/boardgames/1.png', alt: 'boardgames'},
     ], active: false},
-  // {id: 8, height: 'fit-content', type: 'picture', title: 'MY ART',
-  //   picture: [
-  //     {type: 'carousel', imgUrl: 'assets/myArt/1.png', alt: ''},
-  //     {type: 'carousel', imgUrl: 'assets/myArt/2.png', alt: ''},
-  //     {type: 'carousel', imgUrl: 'assets/myArt/3.png', alt: ''},
-  //     {type: 'carousel', imgUrl: 'assets/myArt/4.png', alt: ''},
-  //     {type: 'carousel', imgUrl: 'assets/myArt/5.png', alt: ''},
-  //     {type: 'carousel', imgUrl: 'assets/myArt/6.png', alt: ''},
-  //     {type: 'carousel', imgUrl: 'assets/myArt/7.png', alt: ''},
-  //     {type: 'carousel', imgUrl: 'assets/myArt/8.png', alt: ''},
-  //     {type: 'carousel', imgUrl: 'assets/myArt/9.png', alt: ''},
-  //   ],
-  //   active: true},
 ]
+
+export const lastCardCarousel = {id: 8, height: 'fit-content', type: 'picture', title: 'MY ART',
+  picture: [
+    {type: 'carousel', imgUrl: 'assets/myArt/1.png', alt: ''},
+    {type: 'carousel', imgUrl: 'assets/myArt/2.png', alt: ''},
+    {type: 'carousel', imgUrl: 'assets/myArt/3.png', alt: ''},
+    {type: 'carousel', imgUrl: 'assets/myArt/4.png', alt: ''},
+    {type: 'carousel', imgUrl: 'assets/myArt/5.png', alt: ''},
+    {type: 'carousel', imgUrl: 'assets/myArt/6.png', alt: ''},
+    {type: 'carousel', imgUrl: 'assets/myArt/7.png', alt: ''},
+    {type: 'carousel', imgUrl: 'assets/myArt/8.png', alt: ''},
+    {type: 'carousel', imgUrl: 'assets/myArt/9.png', alt: ''},
+  ]}
