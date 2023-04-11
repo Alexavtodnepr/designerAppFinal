@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,4 +10,4 @@
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: linear-gradient(180deg, #204D48 51.76%, #233237 100%); }
+body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(180deg, #204D48 51.76%, #233237 100%); }

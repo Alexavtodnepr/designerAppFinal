@@ -1,7 +1,7 @@
 export const cardsPortfolioArray = [
   {id: 1, title: 'WEB UX/UI', height: '800px',
     picture: [
-      { type: 'web-figma',imgUrl: 'assets/webPic/dobrodim.svg', alt:'Dobrodim', link: 'https://www.figma.com/file/nlSscuNbndymxBbXcumxLH/%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F?node-id=1-55&t=aDzvgIvKE6YDmN2v-0'},
+      { type: 'web-figma',imgUrl: 'assets/webPic/dobrodim.svg', alt:'Dobrodim', link: 'https://dobrodim.rozgi.com.ua/'},
       { type: 'web-figma',imgUrl: 'assets/webPic/goose.svg', alt:'БандероГусь', link: 'https://www.figma.com/proto/WtUzJ7Dq9Gs1Gk9EjhRaBB/UX%2FUI--day-3?node-id=0-373&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A5044&show-proto-sidebar=1'},
       { type: 'web-figma',imgUrl: 'assets/webPic/tamper.svg', alt:'Tamper', link: 'https://tamper.com.ua/'},
       { type: 'web-figma',imgUrl: 'assets/webPic/tapeElectrical.svg', alt:'Ізолента', link: 'https://www.figma.com/proto/ZpHakXradPZCJyPzwoo8j6/%D0%98%D0%97%D0%9E%D0%9B%D0%95%D0%9D%D0%A2%D0%90?node-id=53-21&scaling=scale-down&page-id=0%3A1'},

@@ -1,12 +1,33 @@
-<div class="h-full w-full gradient-fone pt-24">
-  <div class="flex w-full flex-col items-end -mt-16 group h-fit last:h-fit transition-[height] duration-1000" *ngFor="let card of cardsArray"
-       [ngStyle]="{'height': card.active? card.height: '115px'}">
-    <div class="z-40 box-shadow flex bg-[#8c582d] w-fit px-10 rounded-t-lg uppercase text-[#D3B4A2] text-[16px] md:text-[32px] cursor-pointer group-last:cursor-default"
-        [ngClass]="{'bg-[#955F31]': card.active}"
-    (click)="activeCard(card)">{{card.title}}</div>
-    <div class="z-10 py-10 bg-[#8c582d] px-5 overflow-hidden gradient box-shadow flex w-full h-full flex-row justify-center items-center"
-        [ngClass]="{'gradient': card.active}">
-          <app-completed-works [pictureArray]="card.picture"></app-completed-works>
+<!--<div class="h-full w-full gradient-fone pt-24">-->
+<!--  <div class="flex w-full flex-col items-end -mt-16 group h-fit last:h-fit transition-[height] duration-1000" *ngFor="let card of cardsArray">-->
+<!--    <div class="relative box-shadow flex bg-[#8c582d] w-fit px-10 rounded-t-lg uppercase text-[#D3B4A2] text-[16px] md:text-[32px] cursor-pointer group-last:cursor-default"-->
+<!--        [ngClass]="{'bg-[#955F31]': card.active}"-->
+<!--    (click)="activeCard(card)">{{card.title}}</div>-->
+<!--    <div #imgBlock class="py-10 bg-[#8c582d] px-5 overflow-hidden gradient box-shadow flex flex-row justify-center items-center"-->
+<!--         [style.height.px]="card.active? imgBlock.scrollHeight : 0">-->
+<!--          <app-completed-works [pictureArray]="card.picture"></app-completed-works>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<ul class="w-full flex flex-col accordion gradient-fone w-full pt-28">
+  <li
+    *ngFor="let item of cardsArray; let i = index"
+    class="w-full bg-none"
+    [class.active]="item.active">
+    <div
+      class="w-full flex flex-col items-end justify-end bg-transparent -mt-20"
+    [ngClass]="{'mb-20': item.active}">
+      <div (click)="activeCard(item)" class="relative box-shadow flex bg-[#935e30] w-fit px-10 rounded-t-lg uppercase text-[#D3B4A2] text-[16px] md:text-[32px] cursor-pointer group-last:cursor-default">
+        <h3>{{ item.title }}</h3>
+      </div>
+      <div
+        class="w-full py-2 bg-[#8c582d] px-5 overflow-hidden gradient box-shadow overflow-hidden pl-2.5 transition-[height] duration-1000 ease"
+        #innerText
+        [style.height.px]="item.active ? innerText.scrollHeight : 80">
+        <app-completed-works [pictureArray]="item.picture"></app-completed-works>
+      </div>
     </div>
-  </div>
-</div>
+  </li>
+</ul>
