@@ -1,25 +1,25 @@
 <div class="flex w-full h-full">
   <div class="flex h-full flex-col-reverse items-center md:flex-row md:pr-10">
-    <div *ngIf="showResume" class="w-full md:w-[400px] h-full pt-24 cursor-pointer"
+    <div *ngIf="showResume" class="w-full md:w-[400px] h-full pt-24 cursor-pointer transition-opacity duration-500 hover:opacity-60"
          [ngClass]="{'ml-0 md:ml-10': showResume}"
          [@fadeInOut]="showResume ? 'fadeIn' : 'fadeOut'"
          >
       <img class="object-contain" src="assets/img/CVPyskunKateryna.svg" alt="cv Kateryna Pyskun" (click)="print()">
     </div>
-    <div class="flex w-91.5 px-5 flex-col h-full justify-between">
-      <div class="flex flex-col w-75 h-full ml-10">
-        <div class="flex flex-row justify-between w-61.5 mt-8.75 items-center mb-7.5">
+    <div class="flex w-full md:w-91.5 px-5 flex-col h-full justify-between">
+      <div class="flex flex-col w-75 h-full md:ml-10">
+        <div class="flex flex-row justify-between w-40 md:w-61.5 mt-8.75 items-center mb-7.5">
           <a href="tel:+380509194529"><img src="assets/icons/call.svg" alt="tel"></a>
           <a href="mailto:katherine.dereeva@gmail.com"><img src="assets/icons/email.svg" alt="email"></a>
           <a href="https://www.instagram.com/cat_pyskun/" target="_blank"><img src="assets/icons/Instagram.svg" alt="insta"></a>
         </div>
-        <div class="flex md:fixed top-[100px] flex-row justify-start w-75 mb-8.5">
+        <div class="flex md:fixed top-[100px] flex-row justify-start w-full md:w-75 mb-8.5">
           Professional designer. Experience in advertising and printing. Presentations. Animation<br>
           Web design and UI/UX. Illustration. Creatives.<br><br>
           This is a small part of my work.
           My photo and video works can be viewed at the link on Instagram.
         </div>
-        <div (click)="showResume = !showResume" class="flex md:fixed top-[330px] flex-row justify-center w-75 uppercase bg-[#D3B4A2] mb-10 md:mb-0 h-15 cursor-pointer items-center rounded-xl active:bg-[#955F31]">
+        <div (click)="showResume = !showResume" class="flex md:fixed top-[330px] flex-row justify-center w-full md:w-75 uppercase bg-[#D3B4A2] mb-10 md:mb-0 h-15 cursor-pointer items-center rounded-xl active:bg-[#955F31]">
           resume
         </div>
       </div>

@@ -18,7 +18,7 @@
     [class.active]="item.active">
     <div
       class="w-full flex flex-col items-end justify-end bg-transparent -mt-20"
-    [ngClass]="{'mb-20': item.active}">
+    [ngClass]="{'mb-[55px]': item.active}">
       <div (click)="activeCard(item)" class="relative box-shadow flex bg-[#935e30] w-fit px-10 rounded-t-lg uppercase text-[#D3B4A2] text-[16px] md:text-[32px] cursor-pointer group-last:cursor-default">
         <h3>{{ item.title }}</h3>
       </div>
@@ -27,6 +27,20 @@
         #innerText
         [style.height.px]="item.active ? innerText.scrollHeight : 80">
         <app-completed-works [pictureArray]="item.picture"></app-completed-works>
+      </div>
+    </div>
+  </li>
+  <li
+    class="w-full bg-none">
+    <div
+      class="w-full flex flex-col items-end justify-end bg-transparent -mt-20"
+      >
+      <div class="relative box-shadow flex bg-[#935e30] w-fit px-10 rounded-t-lg uppercase text-[#D3B4A2] text-[16px] md:text-[32px] cursor-pointer group-last:cursor-default">
+        <h3>{{ lastEl.title }}</h3>
+      </div>
+      <div
+        class="w-full py-2 bg-[#8c582d] px-5 overflow-hidden gradient box-shadow overflow-hidden pl-2.5 transition-[height] duration-1000 ease pb-20">
+        <app-completed-works [pictureArray]="lastEl.picture"></app-completed-works>
       </div>
     </div>
   </li>
