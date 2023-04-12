@@ -19,21 +19,21 @@ export class CarouselComponent implements OnInit, AfterViewChecked {
 
   public ngAfterViewChecked() {
     const widthAllImg: any[] = [];
-    if(!this.timerStarted){
-      this.timerStarted = true;
-      setTimeout(() => {
-        if (this.image){
-          for(let i = 0; i<this.image.nativeElement.children.length-1;i++){
-            if(this.image.nativeElement.children[i].getBoundingClientRect().width !== 0){
-              widthAllImg.push(this.image.nativeElement.children[i].getBoundingClientRect().width);
-            }
-          }
-      // @ts-ignore
-          this.sizeArray = widthAllImg;
-        }
-        // this.interval()
-      },5000);
-    }
+    // if(!this.timerStarted){
+    //   this.timerStarted = true;
+    //   setTimeout(() => {
+    //     if (this.image){
+    //       for(let i = 0; i<this.image.nativeElement.children.length-1;i++){
+    //         if(this.image.nativeElement.children[i].getBoundingClientRect().width !== 0){
+    //           widthAllImg.push(this.image.nativeElement.children[i].getBoundingClientRect().width);
+    //         }
+    //       }
+    //   // @ts-ignore
+    //       this.sizeArray = widthAllImg;
+    //     }
+    //     // this.interval()
+    //   },5000);
+    // }
 
   }
 
