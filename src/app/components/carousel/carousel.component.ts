@@ -30,7 +30,7 @@ export class CarouselComponent implements OnInit, AfterViewChecked {
           this.sizeArray = widthAllImg;
         }
         // this.interval()
-      },2000);
+      },5000);
     }
 
   }

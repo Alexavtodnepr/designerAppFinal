@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { cardsPortfolioArray, lastCardCarousel } from 'src/mockData/cardsPortfolio';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
