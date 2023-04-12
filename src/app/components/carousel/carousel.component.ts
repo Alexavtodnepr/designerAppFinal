@@ -9,7 +9,7 @@ export class CarouselComponent implements OnInit, AfterViewChecked {
   @ViewChild('image') image!: ElementRef;
   @Input() imges!: any;
   timerStarted = false;
-  sizeArray = [];
+  sizeArray = [161.66250610351562, 242, 365.51251220703125, 242, 242, 334.38751220703125, 365.51251220703125, 180.75];
   move= 0;
   index = 0;
   constructor() { }
@@ -24,7 +24,9 @@ export class CarouselComponent implements OnInit, AfterViewChecked {
       setTimeout(() => {
         if (this.image){
           for(let i = 0; i<this.image.nativeElement.children.length-1;i++){
-            widthAllImg.push(this.image.nativeElement.children[i].getBoundingClientRect().width)
+            if(this.image.nativeElement.children[i].getBoundingClientRect().width !== 0){
+              widthAllImg.push(this.image.nativeElement.children[i].getBoundingClientRect().width);
+            }
           }
       // @ts-ignore
           this.sizeArray = widthAllImg;
