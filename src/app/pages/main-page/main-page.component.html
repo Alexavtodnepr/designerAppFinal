@@ -3,10 +3,10 @@
 </div>
 <div class="wrap flex flex-col-reverse items-start md:flex-row gradientAll">
   <div class="w-full h-fit left-block">
-    <app-left-side></app-left-side>
+    <app-left-side [resumeOpened]="resumeOpened"></app-left-side>
   </div>
   <div class="flex h-fit w-fit">
-    <app-rigth-side></app-rigth-side>
+    <app-rigth-side (resumeState)="changeStateResume($event)"></app-rigth-side>
   </div>
 </div>
 <div class="hidden" id="resume" >

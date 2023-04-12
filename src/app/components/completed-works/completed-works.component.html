@@ -2,7 +2,7 @@
   <ng-container *ngIf="pictureArray[0].type === 'web-figma'">
     <div *ngFor="let pic of pictureArray">
       <ng-container *ngIf="pic.type === 'web-figma'">
-        <a class="w-fit" href="{{pic.link}}"><img class="w-full" src="{{pic.imgUrl}}" alt="{{pic.alt}}"></a>
+        <a class="w-fit rounded-lg hover:opacity-60" href="{{pic.link}}" target="_blank"><img class="w-full" src="{{pic.imgUrl}}" alt="{{pic.alt}}"></a>
       </ng-container>
     </div>
   </ng-container>

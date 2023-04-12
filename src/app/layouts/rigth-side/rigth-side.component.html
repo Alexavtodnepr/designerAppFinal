@@ -4,9 +4,9 @@
          [ngClass]="{'ml-0 md:ml-10': showResume}"
          [@fadeInOut]="showResume ? 'fadeIn' : 'fadeOut'"
          >
-      <img class="object-contain" src="assets/img/CVPyskunKateryna.svg" alt="cv Kateryna Pyskun" (click)="print()">
+      <img id="resume" class="object-contain" src="assets/img/CVPyskunKateryna.svg" alt="cv Kateryna Pyskun" (click)="print()">
     </div>
-    <div class="flex w-full md:w-91.5 px-5 flex-col h-full justify-between">
+    <div class="flex w-full md:w-94 px-5 flex-col h-full justify-between">
       <div class="flex flex-col w-75 h-full md:ml-10">
         <div class="flex flex-row justify-between w-40 md:w-61.5 mt-8.75 items-center mb-7.5">
           <a href="tel:+380509194529"><img src="assets/icons/call.svg" alt="tel"></a>
@@ -19,7 +19,7 @@
           This is a small part of my work.
           My photo and video works can be viewed at the link on Instagram.
         </div>
-        <div (click)="showResume = !showResume" class="flex md:fixed top-[330px] flex-row justify-center w-full md:w-75 uppercase bg-[#D3B4A2] mb-10 md:mb-0 h-15 cursor-pointer items-center rounded-xl active:bg-[#955F31]">
+        <div (click)="showCloseResume()" class="flex z-50 md:fixed top-[330px] flex-row justify-center w-full md:w-75 uppercase bg-[#D3B4A2] mb-10 md:mb-0 h-15 cursor-pointer items-center rounded-xl active:bg-[#955F31]">
           resume
         </div>
       </div>

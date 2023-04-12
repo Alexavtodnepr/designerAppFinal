@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { cardsPortfolioArray, lastCardCarousel } from 'src/mockData/cardsPortfolio';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
@@ -20,17 +20,21 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ]
 })
-export class LeftSideComponent implements OnInit {
+export class LeftSideComponent implements OnInit, OnChanges {
   active = false;
   heightChosedBlock: number = 120;
   cardsArray = cardsPortfolioArray;
   lastEl = lastCardCarousel;
+  @Input() resumeOpened!:boolean;
   constructor() { }
 
   ngOnInit(): void {
   }
 
   public activeCard(card:any) {
+    if(this.resumeOpened){
+      return
+    }
     this.cardsArray.forEach(el=>{
       if(card.id === el.id){
         card.active = !card.active;
@@ -38,5 +42,15 @@ export class LeftSideComponent implements OnInit {
         el.active = false;
       }
     })
+  }
+
+  public ngOnChanges(changes: SimpleChanges) {
+    if(this.resumeOpened){
+      this.cardsArray.forEach(el=>{
+        if(el.active){
+          el.active = false;
+        }
+      })
+    }
   }
 }

@@ -6,7 +6,8 @@
     <div
       class="w-full flex flex-col items-end justify-end bg-transparent -mt-20"
     [ngClass]="{'mb-[55px]': item.active}">
-      <div (click)="activeCard(item)" class="relative box-shadow flex bg-[#935e30] w-fit px-10 rounded-t-lg uppercase text-[#D3B4A2] text-[16px] md:text-[32px] cursor-pointer group-last:cursor-default">
+      <div (click)="activeCard(item)" class="relative box-shadow flex bg-[#935e30] w-fit px-10 rounded-t-lg uppercase text-[#D3B4A2] text-[16px] md:text-[32px] cursor-pointer group-last:cursor-default"
+      [ngClass]="{'cursor-not-allowed': resumeOpened}">
         <h3>{{ item.title }}</h3>
       </div>
       <div

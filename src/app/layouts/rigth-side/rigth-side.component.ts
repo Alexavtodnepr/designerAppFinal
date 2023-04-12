@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { trigger, style, transition, animate } from '@angular/animations';
 
 @Component({
@@ -19,6 +19,7 @@ import { trigger, style, transition, animate } from '@angular/animations';
 })
 export class RigthSideComponent implements OnInit {
   showResume: boolean = false;
+  @Output() resumeState = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
@@ -26,5 +27,20 @@ export class RigthSideComponent implements OnInit {
 
   public print() {
     window.print();
+  }
+
+  public showCloseResume() {
+    if(this.showResume){
+      this.resumeState.emit(false);
+    }
+    if(!this.showResume){
+      window.scrollTo({
+        top: document.getElementById('resume')?.offsetTop,
+        left: document.getElementById('resume')?.offsetLeft,
+        behavior: 'smooth'
+      });
+      this.resumeState.emit(true);
+    }
+    this.showResume = !this.showResume;
   }
 }
